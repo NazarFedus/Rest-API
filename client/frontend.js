@@ -1,3 +1,18 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.esm.browser.js'
 
-console.log('Vue', Vue)
+new Vue({
+     el: '#app',
+     data() {
+          return {
+               form: {
+                    name: '',
+                    value: '',
+               }
+          }
+     },
+     methods: {
+          createContact(){
+               console.log('Create contact', this.form);
+          }
+     }
+})
